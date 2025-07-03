@@ -1,7 +1,4 @@
-import HeaderComponent from 'header/header.js';
-import FooterComponent from 'footer/footer.js';
-import ContentBlockComponent from './contentBlock/contentBlock.js'; 
+import HeaderComponent from './components/header/header.js';
+import FooterComponent from './components/footer/footer.js';
 customElements.define('header-component', HeaderComponent);
 customElements.define('footer-component', FooterComponent);
-
-customElements.define('content-block-component', ContentBlockComponent);
