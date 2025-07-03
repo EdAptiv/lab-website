@@ -12,14 +12,14 @@
     <!-- Lucide Icons CDN -->
     <script src="https://unpkg.com/lucide@latest"></script>
 
-    <!-- Loads in all available components e.g. header-component -->
+    <!-- Custom web components -->
     <script type="module" src="../components/index.js"></script>
 
     <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="../style.css">
 
     <style>
-        /* Optional: Custom styles for team member cards if needed beyond Tailwind */
+        /* Custom styles for team member cards */
         .member-card-image {
             width: 150px;
             /* Fixed width for circular images */
@@ -41,32 +41,42 @@
 </head>
 
 <body class="min-h-screen bg-gray-50 text-gray-800">
-
+   
+    <!-- ========================
+        Header
+    ========================= -->
     <header-component></header-component>
-
-    <!-- Team Members Section -->
+    
+    <!-- ========================
+        Team Members Section
+    ========================= -->
+    
     <section id="team-members" class="py-16 px-4 bg-white">
         <div class="container mx-auto max-w-6xl">
             <h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">Meet Our Lab Members</h2>
-
+            <!-- Members container with grid layout -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Member Card -->
+                
                 <!-- Member Card -->
                 <div
                     class="member-card bg-gray-50 rounded-lg shadow-md p-6 flex flex-col items-center text-center transform transition-transform duration-300 hover:scale-[1.01] hover:shadow-xl">
-                    <img src="../images/members/placeholder.png" alt="Han van der Maas Photo"
+                    <img src="../images/members/placeholder.png" alt="Alexander Savi"
                         class="member-card-image rounded-full mb-4">
-                    <h3 class="text-xl text-gray-900 mb-1">Dr. Alexander Savi</h3>
-                    <p class="text-sm text-indigo-600 font-medium">Principal Investigator</p>
-                    <p class="text-sm text-gray-600 font-medium mb-3">University of Amsterdam</p>
-                    <p class="text-gray-700 text-base leading-relaxed">Sample Text.</p>
+                    <h3 class="text-xl text-gray-900 mb-1">Dr. Alexander Savi</h3> <!-- Researcher Name-->
+                    <p class="text-sm text-indigo-600 font-medium">Principal Investigator</p> <!-- Title -->
+                    <p class="text-sm text-gray-600 font-medium mb-3">University of Amsterdam</p> <!-- University -->
+                    <p class="text-gray-700 text-base leading-relaxed">Sample Text.</p> <!-- About text -->
+                    
+                    <!-- Links to sites/socials -->
                     <div class="mt-4 flex space-x-3">
-                        <a href="#" class="text-gray-500 hover:text-indigo-600 transition-colors duration-200"
-                            aria-label="Sarah Chen's Twitter">
+                        <!-- href="URL" -->
+                        <a href="#" class="text-gray-500 hover:text-indigo-600 transition-colors duration-200" 
+                            aria-label="Twitter"> <!-- label type of link here (e.g. "Twitter")-->
+                            <!-- icon options: "twitter", "linkedin", "link" for linking other URL, "graduation-cap" for university URL-->
                             <i data-lucide="twitter" class="h-5 w-5"></i>
                         </a>
                         <a href="#" class="text-gray-500 hover:text-indigo-600 transition-colors duration-200"
-                            aria-label="Sarah Chen's LinkedIn">
+                            aria-label="LinkedIn">
                             <i data-lucide="linkedin" class="h-5 w-5"></i>
                         </a>
                     </div>
@@ -75,19 +85,23 @@
                 <!-- Member Card -->
                 <div
                     class="member-card bg-gray-50 rounded-lg shadow-md p-6 flex flex-col items-center text-center transform transition-transform duration-300 hover:scale-[1.01] hover:shadow-xl">
-                    <img src="../images/members/placeholder.png" alt="Han van der Maas Photo"
-                        class="member-card-image rounded-full mb-4">
-                    <h3 class="text-xl text-gray-900 mb-1">Dr. Abe Hofman</h3>
-                    <p class="text-sm text-indigo-600 font-medium">Principal Investigator</p>
-                    <p class="text-sm text-gray-600 font-medium mb-3">University of Amsterdam</p>
-                    <p class="text-gray-700 text-base leading-relaxed">Sample Text.</p>
+                    <img src="../images/members/placeholder.png" alt="Abe Hofman" 
+                        class="member-card-image rounded-full mb-4"> 
+                    <h3 class="text-xl text-gray-900 mb-1">Dr. Abe Hofman</h3> <!-- Researcher Name-->
+                    <p class="text-sm text-indigo-600 font-medium">Principal Investigator</p> <!-- Title -->
+                    <p class="text-sm text-gray-600 font-medium mb-3">University of Amsterdam</p> <!-- University -->
+                    <p class="text-gray-700 text-base leading-relaxed">Sample Text.</p> <!-- About text -->
+                    
+                    <!-- Links to sites/socials -->
                     <div class="mt-4 flex space-x-3">
-                        <a href="#" class="text-gray-500 hover:text-indigo-600 transition-colors duration-200"
-                            aria-label="Sarah Chen's Twitter">
+                        <!-- href="URL" -->
+                        <a href="#" class="text-gray-500 hover:text-indigo-600 transition-colors duration-200" 
+                            aria-label="Twitter"> <!-- label type of link here (e.g. "Twitter")-->
+                            <!-- icon options: "twitter", "linkedin", "link" for linking other URL, "graduation-cap" for university URL-->
                             <i data-lucide="twitter" class="h-5 w-5"></i>
                         </a>
                         <a href="#" class="text-gray-500 hover:text-indigo-600 transition-colors duration-200"
-                            aria-label="Sarah Chen's LinkedIn">
+                            aria-label="LinkedIn">
                             <i data-lucide="linkedin" class="h-5 w-5"></i>
                         </a>
                     </div>
@@ -96,42 +110,23 @@
                 <!-- Member Card -->
                 <div
                     class="member-card bg-gray-50 rounded-lg shadow-md p-6 flex flex-col items-center text-center transform transition-transform duration-300 hover:scale-[1.01] hover:shadow-xl">
-                    <img src="../images/members/placeholder.png" alt="Han van der Maas Photo"
+                    <img src="../images/members/placeholder.png" alt="Han van der Maas"
                         class="member-card-image rounded-full mb-4">
-                    <h3 class="text-xl text-gray-900 mb-1">Prof. Dr. Han van der Maas</h3>
-                    <p class="text-sm text-indigo-600 font-medium">Professor</p>
-                    <p class="text-sm text-gray-600 font-medium mb-3">University of Amsterdam</p>
-                    <p class="text-gray-700 text-base leading-relaxed">Sample Text.</p>
+                    <h3 class="text-xl text-gray-900 mb-1">Prof. Dr. Han van der Maas</h3> <!-- Researcher Name-->
+                    <p class="text-sm text-indigo-600 font-medium">Professor</p> <!-- Title -->
+                    <p class="text-sm text-gray-600 font-medium mb-3">University of Amsterdam</p> <!-- University -->
+                    <p class="text-gray-700 text-base leading-relaxed">Sample Text.</p> <!-- About text -->
+                    
+                    <!-- Links to sites/socials -->
                     <div class="mt-4 flex space-x-3">
-                        <a href="#" class="text-gray-500 hover:text-indigo-600 transition-colors duration-200"
-                            aria-label="Sarah Chen's Twitter">
+                        <!-- href="URL" -->
+                        <a href="#" class="text-gray-500 hover:text-indigo-600 transition-colors duration-200" 
+                            aria-label="Twitter"> <!-- label type of link here (e.g. "Twitter")-->
+                            <!-- icon options: "twitter", "linkedin", "link" for linking other URL, "graduation-cap" for university URL-->
                             <i data-lucide="twitter" class="h-5 w-5"></i>
                         </a>
                         <a href="#" class="text-gray-500 hover:text-indigo-600 transition-colors duration-200"
-                            aria-label="Sarah Chen's LinkedIn">
-                            <i data-lucide="linkedin" class="h-5 w-5"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Add more member cards here following the same structure -->
-
-                <!-- Member Card -->
-                <div
-                    class="member-card bg-gray-50 rounded-lg shadow-md p-6 flex flex-col items-center text-center transform transition-transform duration-300 hover:scale-[1.01] hover:shadow-xl">
-                    <img src="../images/members/placeholder.png" alt="Prof. Dr. Brenda Jansen"
-                        class="member-card-image rounded-full mb-4">
-                    <h3 class="text-xl text-gray-900 mb-1">Prof. Dr. Han van der Maas</h3>
-                    <p class="text-sm text-indigo-600 font-medium">Professor</p>
-                    <p class="text-sm text-gray-600 font-medium mb-3">University of Amsterdam</p>
-                    <p class="text-gray-700 text-base leading-relaxed">Sample Text.</p>
-                    <div class="mt-4 flex space-x-3">
-                        <a href="#" class="text-gray-500 hover:text-indigo-600 transition-colors duration-200"
-                            aria-label="Sarah Chen's Twitter">
-                            <i data-lucide="twitter" class="h-5 w-5"></i>
-                        </a>
-                        <a href="#" class="text-gray-500 hover:text-indigo-600 transition-colors duration-200"
-                            aria-label="Sarah Chen's LinkedIn">
+                            aria-label="LinkedIn">
                             <i data-lucide="linkedin" class="h-5 w-5"></i>
                         </a>
                     </div>
@@ -140,45 +135,37 @@
                 <!-- Member Card -->
                 <div
                     class="member-card bg-gray-50 rounded-lg shadow-md p-6 flex flex-col items-center text-center transform transition-transform duration-300 hover:scale-[1.01] hover:shadow-xl">
-                    <img src="../images/members/placeholder.png" alt="Han van der Maas Photo"
+                    <img src="../images/members/placeholder.png" alt="Alexander Savi"
                         class="member-card-image rounded-full mb-4">
-                    <h3 class="text-xl text-gray-900 mb-1">Dr. Maria Bolsinova</h3>
-                    <p class="text-sm text-indigo-600 font-medium">Assistant Professor</p>
-                    <p class="text-sm text-gray-600 font-medium mb-3">Tilburg University</p>
-                    <p class="text-gray-700 text-base leading-relaxed">Sample Text.</p>
+                    <h3 class="text-xl text-gray-900 mb-1">Dr. Maria Bolsinova</h3> <!-- Researcher Name-->
+                    <p class="text-sm text-indigo-600 font-medium">Assistant Professor</p> <!-- Title -->
+                    <p class="text-sm text-gray-600 font-medium mb-3">Tilberg University</p> <!-- University -->
+                    <p class="text-gray-700 text-base leading-relaxed">Sample Text.</p> <!-- About text -->
+                    
+                    <!-- Links to sites/socials -->
                     <div class="mt-4 flex space-x-3">
-                        <a href="#" class="text-gray-500 hover:text-indigo-600 transition-colors duration-200"
-                            aria-label="Sarah Chen's Twitter">
+                        <!-- href="URL" -->
+                        <a href="#" class="text-gray-500 hover:text-indigo-600 transition-colors duration-200" 
+                            aria-label="Twitter"> <!-- label type of link here (e.g. "Twitter")-->
+                            <!-- icon options: "twitter", "linkedin", "link" for linking other URL, "graduation-cap" for university URL-->
                             <i data-lucide="twitter" class="h-5 w-5"></i>
                         </a>
                         <a href="#" class="text-gray-500 hover:text-indigo-600 transition-colors duration-200"
-                            aria-label="Sarah Chen's LinkedIn">
+                            aria-label="LinkedIn">
                             <i data-lucide="linkedin" class="h-5 w-5"></i>
                         </a>
                     </div>
                 </div>
+
 
             </div>
         </div>
     </section>
 
-    <!-- Footer - Identical to other pages -->
-    <footer class="bg-gray-800 text-white py-8 px-4">
-        <div class="container mx-auto text-center">
-            <p class="text-sm mb-4">&copy; <span id="current-year"></span> EdAptiv Lab. All rights reserved.</p>
-            <div class="flex justify-center space-x-6">
-                <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">
-                    Privacy Policy
-                </a>
-                <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">
-                    Terms of Service
-                </a>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Custom JavaScript (for copyright year etc.) -->
-    <script src="script.js"></script>
+  <!-- ========================
+       Footer
+  ========================= -->
+  <footer-component></footer-component>
 
 </body>
 
