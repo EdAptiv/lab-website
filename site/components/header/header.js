@@ -1,6 +1,6 @@
 class HeaderComponent extends HTMLElement {
     connectedCallback() {
-        fetch('https://edaptiv.github.io/lab-website/header.html')
+        fetch('https://edaptiv.github.io/lab-website/site/components/header/header.html')
             .then(res => res.text())
             .then(html => {
                 this.innerHTML = html;
