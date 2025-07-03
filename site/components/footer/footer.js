@@ -1,6 +1,6 @@
 class FooterComponent extends HTMLElement {
     connectedCallback() {
-        fetch('../../site/components/footer/footer.html')
+        fetch('/site/components/footer/footer.html')
             .then(res => res.text())
             .then(html => {
                 this.innerHTML = html;
