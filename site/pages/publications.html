@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications - EdAptiv Lab</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="../style.css">
+    
+    <script src="https://unpkg.com/bibtex-js-parser/umd/bibtex-js-parser.js"></script>
+
+    <!-- Loads in all available components e.g. header-component -->
+    <script type="module" src="../components/index.js"></script>
+    
+    <!-- Loads in all custom bibTextFunctions and executes when DOM loads to build all HTML dynamically based on file -->
+    <script src="../scripts/bibTextFunctions.js"></script>
+
+    <style>
+        /* Custom styles for publications list to mimic the example site's formatting */
+        .publication-item {
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 1.2rem;
+            margin-bottom: 1.2rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 1.2rem;
+            /* Equivalent to space-x-6 */
+        }
+
+        .publication-item:last-child {
+            border-bottom: none;
+            /* No border for the last item */
+        }
+
+        .publication-year {
+            font-size: 1.2rem;
+            /* text-2xl */
+            font-weight: 700;
+            /* font-bold */
+            color: #4A5568;
+            /* gray-700 */
+            width: 80px;
+            /* Fixed width for year column */
+            flex-shrink: 0;
+            text-align: right;
+            padding-top: 0.25rem;
+            /* Align year with title baseline */
+        }
+
+        .publication-details {
+            flex-grow: 1;
+        }
+
+        .publication-title {
+            font-weight: 600;
+            /* font-semibold */
+            color: #1A202C;
+            /* gray-900 */
+            margin-bottom: 0.5rem;
+            line-height: 1.4;
+            font-size: 1rem;
+            /* text-lg for title */
+        }
+
+        .publication-authors {
+            font-style: italic;
+            color: #4A5568;
+            /* gray-700 */
+            margin-bottom: 0.5rem;
+            font-size: 0.85rem;
+        }
+
+        .publication-journal,
+        .publication-booktitle {
+            color: #4A5568;
+            /* gray-700 */
+            margin-bottom: 0.5rem;
+            font-size: 0.85rem;
+        }
+
+        .publication-links a {
+            color: #4c51bf;
+            /* indigo-600 */
+            text-decoration: none;
+            margin-right: 1rem;
+            font-weight: 500;
+            font-size: 0.85rem;
+        }
+
+        .publication-links a:hover {
+            text-decoration: underline;
+        }
+
+        .publication-abstract-toggle {
+            color: #4c51bf;
+            /* indigo-600 */
+            text-decoration: none;
+            font-weight: 500;
+            cursor: pointer;
+            font-size: 0.85rem;
+            margin-top: 0.5rem;
+            display: inline-block;
+            /* Allows margin-top */
+        }
+
+        .publication-abstract-toggle:hover {
+            text-decoration: underline;
+        }
+
+        .publication-abstract-content {
+            margin-top: 1rem;
+            padding-left: 1rem;
+            border-left: 3px solid #667EEA;
+            /* indigo-500 */
+            color: #4A5568;
+            font-size: 0.8rem;
+            line-height: 1.6;
+            max-height: 0;
+            /* Hidden by default */
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+
+        .publication-abstract-content.open {
+            max-height: 200px;
+            /* Adjust as needed to show full abstract */
+            transition: max-height 0.5s ease-in;
+        }
+    </style>
+</head>
+
+<body class="min-h-screen bg-gray-50 text-gray-800">
+
+    <header-component></header-component>
+
+    <section id="publications" class="py-16 px-4 bg-white">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">Publications</h2>
+
+            <div id="publications-list" class="space-y-8">
+                <p class="text-gray-600 text-center">Loading publications...</p>
+            </div>
+        </div>
+    </section>
+
+
+    <footer-component></footer-component>
+
+</body>
+
+</html>

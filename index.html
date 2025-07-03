@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EdAptiv Lab</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Loads in all available components e.g. header-component -->
+    <script type="module" src="site/components/index.js"></script>
+
+    <script src="site/scripts/script.js"></script>
+
+    <link rel="stylesheet" href="site/style.css">
+</head>
+
+<body class="min-h-screen bg-gray-50 text-gray-800">
+
+    <header-component></header-component>
+
+    <section id="about" class="py-16 px-4 bg-white">
+        <div class="container mx-auto max-w-5xl">
+            <div class="md:flex md:items-center md:space-x-10 mb-8">
+                <h2 class="h2-intro-style text-6xl md:text-6xl font-bold text-gray-900 mb-4 md:mb-0 text-right flex-1">
+                    Tomorrow’s Technology, Today’s Education.
+                </h2>
+                <div
+                    class="relative h-64 md:h-80 w-full md:w-1/2 flex-shrink-0 group"> <a href="./site/pages/team.html" class="block w-full h-full relative">
+                        <img src="./site/images/group_placeholder.png" alt="Our research team group photo"
+                            class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                            onerror="this.onerror=null; this.src='https://placehold.co/600x400/E0E7FF/4F46E5?text=Group+Photo+Not+Found'; console.error('Error loading images/group_photo.png');" />
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <span class="text-white text-xl font-semibold">Meet the team</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="mt-8">
+                <p class="text-base text-gray-700 leading-relaxed mb-4">
+                    Based in the Psychological Methods Department at the University of Amsterdam, our lab unites a
+                    global network of educational technology researchers to improve learning through data. Drawing on
+                    psychometrics, cognitive science, and motivation theory, we design personalized, adaptive learning
+                    solutions.
+                </p>
+                <p class="text-base text-gray-700 leading-relaxed mb-4">
+                    We believe education should adapt to learners—not the other way around. Using AI and big data, we
+                    explore how people learn best and develop tools that support meaningful, individualized progress.
+                </p>
+                <p class="text-base text-gray-700 leading-relaxed">
+                    Browse our page to find out more about our <a href="site/pages/research.html"
+                        class="text-indigo-600 hover:text-indigo-800 underline">ongoing research</a>, <a
+                        href="site/pages/publications.html" class="text-indigo-600 hover:text-indigo-800 underline">publications</a>,
+                    or <a href="site/pages/contact.html" class="text-indigo-600 hover:text-indigo-800 underline">how to get in
+                        touch</a>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="news" class="relative z-10 px-4 pb-16 bg-white">
+        <div class="container mx-auto max-w-5xl bg-indigo-600 p-8 rounded-lg shadow-xl">
+            <h2 class="text-2xl font-semibold text-white mb-5 text-left">Latest News</h2>
+            <div class="space-y-6">
+                <ul class="list-disc list-inside p-0 m-0 text-white">
+                    <li class="mb-3">
+                        <p class="text-base leading-relaxed"> <strong class="font-semibold">July 20-25, 2025:</strong>
+                            We are going to
+                            present at Educational Data Mining and Learning @ Scale. Will we see you in Palermo?
+                        </p>
+                    </li>
+                    <li class="mb-3">
+                        <p class="text-base leading-relaxed"> <strong class="font-semibold">July 11, 2025:</strong> We
+                            just wrapped up a
+                            week of coworking, discussions, and hanging out at our annual lab retreat.
+                        </p>
+                    </li>
+                    <li>
+                        <p class="text-base leading-relaxed"> <strong class="font-semibold">July 7, 2025:</strong> Our
+                            new website is launched!
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer-component></footer-component>
+
+
+</body>
+
+</html>

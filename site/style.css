@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Geologica:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap');
+
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    color: #333;
+    scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-weight: 300;
+}
+
+/* Headings styles */
+h1 {
+    font-family: 'Fira Sans', sans-serif;
+    text-align: center;
+    font-weight: 700; /* Bold */
+}
+
+h2 {
+    font-family: 'Fira Sans', sans-serif;
+    text-align: left;
+    font-weight: 700; /* Bold */
+}
+
+.h2-intro-style { /* Changed from h2-intro to a class */
+    font-family: 'Cabin Sketch', sans-serif;
+    text-align: left; /* Changed from right to left */
+    font-weight: 700; /* Bold */
+}
+
+h3 {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 300; /* Light weight */
+}
+
+
+
+/* Custom animations */
+@keyframes fadeInFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInFromBottom 0.6s ease-out forwards;
+  opacity: 0; /* Start invisible */
+}
+
+.delay-200 { animation-delay: 0.2s; }
+.delay-400 { animation-delay: 0.4s; }
+
+/* Ensure Lucide icons are styled correctly */
+.lucide {
+    display: inline-block;
+    vertical-align: middle;
+}
