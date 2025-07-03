@@ -2,154 +2,166 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EdAptiv Lab</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EdAptiv Lab</title>
 
-  <!-- Base path for all relative links -->
-  <base href="lab-website" />
+    <!-- Base path for all relative links -->
+    <base href="lab-website" />
 
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Lucide icons -->
-  <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Lucide icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
 
-  <!-- Custom web components -->
-  <script type="module" src="./site/components/index.js"></script>
+    <!-- Custom web components -->
+    <script type="module" src="./site/components/index.js"></script>
 
-  <!-- Custom script -->
-  <script src="./site/scripts/script.js"></script>
+    <!-- Custom script -->
+    <script src="./site/scripts/script.js"></script>
 
-  <!-- Custom styles -->
-  <link rel="stylesheet" href="./site/style.css" />
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="./site/style.css" />
 </head>
 
 <body class="min-h-screen bg-gray-50 text-gray-800">
 
-  <!-- ========================
+    <!-- ========================
        Header Component
   ========================= -->
-  <header-component></header-component>
+    <header-component></header-component>
 
-  <!-- ========================
+    <!-- ========================
        About Section
   ========================= -->
-  <section id="about" class="py-16 px-4 bg-white">
-    <div class="container mx-auto max-w-5xl">
+    <section id="about" class="py-16 px-4 bg-white">
+        <div class="container mx-auto max-w-5xl">
 
-      <!-- Heading & Team Image -->
-      <div class="md:flex md:items-center md:space-x-10 mb-8">
+            <!-- Heading & Team Image -->
+            <div class="md:flex md:items-center md:space-x-10 mb-8">
 
-        <!-- Lab Tagline -->
-        <h2 class="h2-intro-style text-6xl md:text-6xl font-bold text-gray-900 mb-4 md:mb-0 text-right flex-1">
-          Tomorrow’s Technology, Today’s Education.
-        </h2>
+                <!-- Lab Tagline -->
+                <h2 class="h2-intro-style text-6xl md:text-6xl font-bold text-gray-900 mb-4 md:mb-0 text-right flex-1">
+                    Tomorrow’s Technology, Today’s Education.
+                </h2>
 
-        <!-- Image Link with Hover -->
-        <div class="relative h-64 md:h-80 w-full md:w-1/2 flex-shrink-0 group">
-          <a href="./site/pages/team.html" class="block w-full h-full relative">
-            <img
-              src="./site/images/group_placeholder.png"
-              alt="Our research team group photo"
-              class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-              onerror="this.onerror=null; this.src='https://placehold.co/600x400/E0E7FF/4F46E5?text=Group+Photo+Not+Found'; console.error('Error loading images/group_photo.png');"
-            />
-            <div
-              class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <span class="text-white text-xl font-semibold">Meet the team</span>
+                <!-- Image Link with Hover -->
+                <div class="relative h-64 md:h-80 w-full md:w-1/2 flex-shrink-0 group">
+                    <a href="./site/pages/team.html" class="block w-full h-full relative">
+                        <img src="./site/images/group_placeholder.png" alt="Our research team group photo"
+                            class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                            onerror="this.onerror=null; this.src='https://placehold.co/600x400/E0E7FF/4F46E5?text=Group+Photo+Not+Found'; console.error('Error loading images/group_photo.png');" />
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <span class="text-white text-xl font-semibold">Meet the team</span>
+                        </div>
+                    </a>
+                </div>
+
             </div>
-          </a>
+
+            <!-- Description Text -->
+            <div class="mt-8">
+                <p class="text-base text-gray-700 leading-relaxed mb-4">
+                    Based in the
+                    <a href="https://psyres.uva.nl/content/research-groups/programme-group-psychological-methods/programme-group-psychological-methods.html"
+                        class="text-indigo-600 hover:text-indigo-800 underline">
+                        Psychological Methods Department
+                    </a>
+                    at the
+                    <a href="https://www.uva.nl/en" class="text-indigo-600 hover:text-indigo-800 underline">
+                        University of Amsterdam
+                    </a>,
+                    our lab unites a network of educational technology researchers to improve learning through data.
+                    Drawing on psychometrics, cognitive science, and motivation theory, we design personalized, adaptive
+                    learning
+                    solutions.
+                </p>
+
+                <p class="text-base text-gray-700 leading-relaxed mb-4">
+                    We believe education should adapt to learners—not the other way around.
+                    Using AI and big data, we explore how people learn best and develop tools that support meaningful,
+                    individualized progress.
+                </p>
+
+                <p class="text-base text-gray-700 leading-relaxed">
+                    Browse our page to find out more about our
+                    <a href="./site/pages/research.html" class="text-indigo-600 hover:text-indigo-800 underline">
+                        ongoing research
+                    </a>,
+                    <a href="./site/pages/publications.html" class="text-indigo-600 hover:text-indigo-800 underline">
+                        publications
+                    </a>,
+                    or
+                    <a href="./site/pages/contact.html" class="text-indigo-600 hover:text-indigo-800 underline">
+                        how to get in touch
+                    </a>.
+                </p>
+            </div>
+
         </div>
+    </section>
 
-      </div>
-
-      <!-- Description Text -->
-      <div class="mt-8">
-        <p class="text-base text-gray-700 leading-relaxed mb-4">
-          Based in the
-          <a
-            href="https://psyres.uva.nl/content/research-groups/programme-group-psychological-methods/programme-group-psychological-methods.html"
-            class="text-indigo-600 hover:text-indigo-800 underline">
-            Psychological Methods Department
-          </a>
-          at the
-          <a href="https://www.uva.nl/en" class="text-indigo-600 hover:text-indigo-800 underline">
-            University of Amsterdam
-          </a>,
-          our lab unites a network of educational technology researchers to improve learning through data.
-          Drawing on psychometrics, cognitive science, and motivation theory, we design personalized, adaptive learning
-          solutions.
-        </p>
-
-        <p class="text-base text-gray-700 leading-relaxed mb-4">
-          We believe education should adapt to learners—not the other way around.
-          Using AI and big data, we explore how people learn best and develop tools that support meaningful,
-          individualized progress.
-        </p>
-
-        <p class="text-base text-gray-700 leading-relaxed">
-          Browse our page to find out more about our
-          <a href="./site/pages/research.html" class="text-indigo-600 hover:text-indigo-800 underline">
-            ongoing research
-          </a>,
-          <a href="./site/pages/publications.html" class="text-indigo-600 hover:text-indigo-800 underline">
-            publications
-          </a>,
-          or
-          <a href="./site/pages/contact.html" class="text-indigo-600 hover:text-indigo-800 underline">
-            how to get in touch
-          </a>.
-        </p>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ========================
+    <!-- ========================
        News Section
   ========================= -->
-  <section id="news" class="relative z-10 px-4 pb-16 bg-white">
-    <div class="container mx-auto max-w-5xl bg-indigo-600 p-8 rounded-lg shadow-xl">
+    <section id="news" class="relative z-10 px-4 pb-16 bg-white">
+        <div class="container mx-auto max-w-5xl bg-indigo-600 p-8 rounded-lg shadow-xl">
 
-      <!-- News Header -->
-      <h2 class="text-2xl font-semibold text-white mb-5 text-left">
-        Latest News
-      </h2>
+            <!-- News Header -->
+            <h2 class="text-2xl font-semibold text-white mb-5 text-left flex items-center gap-3">
+                Latest News
+            </h2>
 
-      <!-- News Items -->
-      <ul class="list-disc list-inside p-0 m-0 text-white space-y-6">
+            <!-- News Items -->
+            <ul class="list-disc list-inside p-0 m-0 text-white space-y-6">
 
-        <li>
-          <p class="text-base leading-relaxed">
-            <strong class="font-semibold">July 20-25, 2025:</strong>
-            We are going to present at Educational Data Mining and Learning @ Scale.
-            Will we see you in Palermo?
-          </p>
-        </li>
+                <li>
+                    <p class="text-base leading-relaxed">
+                        <strong class="font-semibold">July 20-25, 2025:</strong>
+                        We are going to present at Educational Data Mining and Learning @ Scale.
+                        Will we see you in Palermo?
+                    </p>
+                </li>
 
-        <li>
-          <p class="text-base leading-relaxed">
-            <strong class="font-semibold">July 11, 2025:</strong>
-            We just wrapped up a week of coworking, discussions, and hanging out at our annual lab retreat.
-          </p>
-        </li>
+                <li>
+                    <p class="text-base leading-relaxed">
+                        <strong class="font-semibold">July 11, 2025:</strong>
+                        We just wrapped up a week of coworking, discussions, and hanging out at our annual lab retreat.
+                    </p>
+                </li>
 
-        <li>
-          <p class="text-base leading-relaxed">
-            <strong class="font-semibold">July 7, 2025:</strong>
-            Our new website is launched!
-          </p>
-        </li>
+                <li>
+                    <p class="text-base leading-relaxed">
+                        <strong class="font-semibold">July 7, 2025:</strong>
+                        Our new website is launched!
+                    </p>
+                </li>
 
-      </ul>
-    </div>
-  </section>
+                <!-- News and Socials button-->
+                <div class="mt-6 text-left">
+                    <a href="./site/pages/news.html"
+                        class="inline-flex items-center gap-2 px-5 py-2 bg-white text-indigo-600 font-medium rounded-full shadow transition-transform duration-200 hover:scale-105">
 
-  <!-- ========================
+                        <i data-lucide="newspaper"
+                            class="h-5 w-5 text-indigo-600 transition-transform duration-200 hover:scale-110">
+                        </i>
+
+                        News & Socials
+                    </a>
+                </div>
+
+
+
+            </ul>
+        </div>
+    </section>
+
+    <!-- ========================
        Footer Component
   ========================= -->
-  <footer-component></footer-component>
+    <footer-component></footer-component>
 
 </body>
 
