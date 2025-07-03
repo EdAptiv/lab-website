@@ -1,6 +1,6 @@
 class HeaderComponent extends HTMLElement {
     connectedCallback() {
-        fetch('/site/components/header/header.html')
+        fetch('/lab-website/site/components/header/header.html')
             .then(res => res.text())
             .then(html => {
                 this.innerHTML = html;
