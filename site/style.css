@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Geologica:wght@300;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
 
 
 body {
@@ -13,26 +14,32 @@ body {
 p {
     font-family: 'Inter', sans-serif;
     font-size: 11px;
+    color: #333;
     font-weight: 300;
 }
 
-/* Headings styles */
+/* Links */
+a {    
+  color: #6f6cff;
+  transition: color 0.2s ease-in-out;
+}
+
+/* Headings */
 h1 {
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Space Mono', sans-serif;
     text-align: center;
     font-weight: 700; /* Bold */
 }
 
 h2 {
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Space Mono', sans-serif;
     text-align: left;
-    font-weight: 700; /* Bold */
-}
+    font-weight: 400; /* Bold */}
 
-.h2-intro-style { /* Changed from h2-intro to a class */
-    font-family: 'Cabin Sketch', sans-serif;
-    text-align: left; /* Changed from right to left */
-    font-weight: 700; /* Bold */
+.h2-intro-style { 
+    font-family: 'Space Mono', sans-serif;
+    text-align: right; /* Changed from right to left */
+    font-weight: 400; /* Bold */
 }
 
 h3 {
