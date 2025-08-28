@@ -8,9 +8,11 @@
     <base href="lab-website">
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- Lucide Icons CDN -->
     <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
 
     <!-- Custom web components -->
     <script type="module" src="../components/index.js"></script>
@@ -41,43 +43,39 @@
 </head>
 
 <body class="min-h-screen bg-gray-50 text-gray-800">
-   
+
     <!-- ========================
         Header
     ========================= -->
     <header-component></header-component>
-    
+
     <!-- ========================
         Team Members Section
     ========================= -->
-    
+
     <section id="team-members" class="py-16 px-4 bg-white">
         <div class="container mx-auto max-w-6xl">
             <h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">Meet Our Lab Members</h2>
             <!-- Members container with grid layout -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:grid-cols-4 gap-6">
+
                 <!-- Member Card -->
                 <div
                     class="member-card bg-gray-50 rounded-lg shadow-md p-6 flex flex-col items-center text-center transform transition-transform duration-300 hover:scale-[1.01] hover:shadow-xl">
-                    <img src="../images/members/placeholder.png" alt="Alexander Savi"
-                        class="member-card-image rounded-full mb-4">
+                    <img src="../images/members/savi.jpg" class="member-card-image rounded-full mb-4">
                     <h3 class="text-xl text-gray-900 mb-1">Dr. Alexander Savi</h3> <!-- Researcher Name-->
-                    <p class="text-sm text-indigo-600 font-medium">Principal Investigator</p> <!-- Title -->
+                    <p class="text-sm text-[#527ED6] font-medium">Principal Investigator</p> <!-- Title -->
                     <p class="text-sm text-gray-600 font-medium mb-3">University of Amsterdam</p> <!-- University -->
                     <p class="text-gray-700 text-base leading-relaxed">Sample Text.</p> <!-- About text -->
-                    
+
                     <!-- Links to sites/socials -->
                     <div class="mt-4 flex space-x-3">
                         <!-- href="URL" -->
-                        <a href="#" class="text-gray-500 hover:text-indigo-600 transition-colors duration-200" 
-                            aria-label="Twitter"> <!-- label type of link here (e.g. "Twitter")-->
+                        <a href="https://www.alexandersavi.nl"
+                            class="text-gray-500 hover:text-[#527ED6]"
+                            aria-label="Personal Website"> <!-- label type of link here (e.g. "Twitter")-->
                             <!-- icon options: "twitter", "linkedin", "link" for linking other URL, "graduation-cap" for university URL-->
-                            <i data-lucide="twitter" class="h-5 w-5"></i>
-                        </a>
-                        <a href="#" class="text-gray-500 hover:text-indigo-600 transition-colors duration-200"
-                            aria-label="LinkedIn">
-                            <i data-lucide="linkedin" class="h-5 w-5"></i>
+                            <i data-lucide="link" class="h-5 w-5"></i>
                         </a>
                     </div>
                 </div>
@@ -85,24 +83,20 @@
                 <!-- Member Card -->
                 <div
                     class="member-card bg-gray-50 rounded-lg shadow-md p-6 flex flex-col items-center text-center transform transition-transform duration-300 hover:scale-[1.01] hover:shadow-xl">
-                    <img src="../images/members/placeholder.png" alt="Abe Hofman" 
-                        class="member-card-image rounded-full mb-4"> 
+                    <img src="../images/members/hofman.png" class="member-card-image rounded-full mb-4">
                     <h3 class="text-xl text-gray-900 mb-1">Dr. Abe Hofman</h3> <!-- Researcher Name-->
-                    <p class="text-sm text-indigo-600 font-medium">Principal Investigator</p> <!-- Title -->
+                    <p class="text-sm text-[#527ED6] font-medium">Principal Investigator</p> <!-- Title -->
                     <p class="text-sm text-gray-600 font-medium mb-3">University of Amsterdam</p> <!-- University -->
                     <p class="text-gray-700 text-base leading-relaxed">Sample Text.</p> <!-- About text -->
-                    
+
                     <!-- Links to sites/socials -->
                     <div class="mt-4 flex space-x-3">
                         <!-- href="URL" -->
-                        <a href="#" class="text-gray-500 hover:text-indigo-600 transition-colors duration-200" 
+                        <a href="https://www.uva.nl/en/profile/h/o/a.d.hofman/a.d.hofman.html"
+                            class="text-gray-500 hover:text-[#527ED6] transition-colors duration-200"
                             aria-label="Twitter"> <!-- label type of link here (e.g. "Twitter")-->
                             <!-- icon options: "twitter", "linkedin", "link" for linking other URL, "graduation-cap" for university URL-->
-                            <i data-lucide="twitter" class="h-5 w-5"></i>
-                        </a>
-                        <a href="#" class="text-gray-500 hover:text-indigo-600 transition-colors duration-200"
-                            aria-label="LinkedIn">
-                            <i data-lucide="linkedin" class="h-5 w-5"></i>
+                            <i data-lucide="graduation-cap" class="h-5 w-5"></i>
                         </a>
                     </div>
                 </div>
@@ -110,22 +104,22 @@
                 <!-- Member Card -->
                 <div
                     class="member-card bg-gray-50 rounded-lg shadow-md p-6 flex flex-col items-center text-center transform transition-transform duration-300 hover:scale-[1.01] hover:shadow-xl">
-                    <img src="../images/members/placeholder.png" alt="Han van der Maas"
-                        class="member-card-image rounded-full mb-4">
+                    <img src="../images/members/vandermaas.jpg" class="member-card-image rounded-full mb-4">
                     <h3 class="text-xl text-gray-900 mb-1">Prof. Dr. Han van der Maas</h3> <!-- Researcher Name-->
-                    <p class="text-sm text-indigo-600 font-medium">Professor</p> <!-- Title -->
+                    <p class="text-sm text-[#527ED6] font-medium">Professor</p> <!-- Title -->
                     <p class="text-sm text-gray-600 font-medium mb-3">University of Amsterdam</p> <!-- University -->
                     <p class="text-gray-700 text-base leading-relaxed">Sample Text.</p> <!-- About text -->
-                    
+
                     <!-- Links to sites/socials -->
                     <div class="mt-4 flex space-x-3">
                         <!-- href="URL" -->
-                        <a href="#" class="text-gray-500 hover:text-indigo-600 transition-colors duration-200" 
-                            aria-label="Twitter"> <!-- label type of link here (e.g. "Twitter")-->
-                            <!-- icon options: "twitter", "linkedin", "link" for linking other URL, "graduation-cap" for university URL-->
-                            <i data-lucide="twitter" class="h-5 w-5"></i>
+                        <a href="https://scholar.google.com/citations?user=yL2EByAAAAAJ" target="_blank" rel="noopener"
+                            aria-label="Academia"
+                            class="text-gray-500 hover:text-[#527ED6] transition-colors duration-200">
+                            <i class="ai ai-google-scholar ai-2x"></i>
                         </a>
-                        <a href="#" class="text-gray-500 hover:text-indigo-600 transition-colors duration-200"
+                        <a href="https://www.linkedin.com/in/han-l-j-van-der-maas-966b7111/"
+                            class="text-gray-500 hover:text-[#527ED6] transition-colors duration-200"
                             aria-label="LinkedIn">
                             <i data-lucide="linkedin" class="h-5 w-5"></i>
                         </a>
@@ -135,24 +129,187 @@
                 <!-- Member Card -->
                 <div
                     class="member-card bg-gray-50 rounded-lg shadow-md p-6 flex flex-col items-center text-center transform transition-transform duration-300 hover:scale-[1.01] hover:shadow-xl">
-                    <img src="../images/members/placeholder.png" alt="Alexander Savi"
-                        class="member-card-image rounded-full mb-4">
+                    <img src="../images/members/jansen.jpg" class="member-card-image rounded-full mb-4">
+                    <h3 class="text-xl text-gray-900 mb-1">Dr. Brenda Jansen</h3> <!-- Researcher Name-->
+                    <p class="text-sm text-[#527ED6] font-medium">Associate Professor</p> <!-- Title -->
+                    <p class="text-sm text-gray-600 font-medium mb-3">University of Amsterdam</p> <!-- University -->
+                    <p class="text-gray-700 text-base leading-relaxed">Sample Text.</p> <!-- About text -->
+
+                    <!-- Links to sites/socials -->
+                    <div class="mt-4 flex space-x-3">
+                        <!-- href="URL" -->
+                        <a href="https://scholar.google.nl/citations?user=SoURbp0AAAAJ&hl=nl" target="_blank"
+                            rel="noopener" aria-label="Academia"
+                            class="text-gray-500 hover:text-[#527ED6] transition-colors duration-200">
+                            <i class="ai ai-google-scholar ai-2x"></i>
+                        </a>
+                        <a href="https://www.uva.nl/en/profile/j/a/b.r.j.jansen/b.r.j.jansen.html"
+                            class="text-gray-500 hover:text-[#527ED6] transition-colors duration-200"
+                            aria-label="Website">
+                            <i data-lucide="link" class="h-5 w-5"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Member Card -->
+                <div
+                    class="member-card bg-gray-50 rounded-lg shadow-md p-6 flex flex-col items-center text-center transform transition-transform duration-300 hover:scale-[1.01] hover:shadow-xl">
+                    <img src="../images/members/bolsinova.jpg" class="member-card-image rounded-full mb-4">
                     <h3 class="text-xl text-gray-900 mb-1">Dr. Maria Bolsinova</h3> <!-- Researcher Name-->
-                    <p class="text-sm text-indigo-600 font-medium">Assistant Professor</p> <!-- Title -->
+                    <p class="text-sm text-[#527ED6] font-medium">Assistant Professor</p> <!-- Title -->
                     <p class="text-sm text-gray-600 font-medium mb-3">Tilberg University</p> <!-- University -->
                     <p class="text-gray-700 text-base leading-relaxed">Sample Text.</p> <!-- About text -->
-                    
+
                     <!-- Links to sites/socials -->
                     <div class="mt-4 flex space-x-3">
                         <!-- href="URL" -->
-                        <a href="#" class="text-gray-500 hover:text-indigo-600 transition-colors duration-200" 
-                            aria-label="Twitter"> <!-- label type of link here (e.g. "Twitter")-->
+                        <a href="https://www.tilburguniversity.edu/staff/m-a-bolsinova"
+                            class="text-gray-500 hover:text-[#527ED6] transition-colors duration-200"
+                            aria-label="Website"> <!-- label type of link here (e.g. "Twitter")-->
                             <!-- icon options: "twitter", "linkedin", "link" for linking other URL, "graduation-cap" for university URL-->
-                            <i data-lucide="twitter" class="h-5 w-5"></i>
+                            <i data-lucide="link" class="h-5 w-5"></i>
                         </a>
-                        <a href="#" class="text-gray-500 hover:text-indigo-600 transition-colors duration-200"
-                            aria-label="LinkedIn">
+                    </div>
+                </div>
+
+                <!-- Member Card -->
+                <div
+                    class="member-card bg-gray-50 rounded-lg shadow-md p-6 flex flex-col items-center text-center transform transition-transform duration-300 hover:scale-[1.01] hover:shadow-xl">
+                    <img src="../images/members/johansson.png" class="member-card-image rounded-full mb-4">
+                    <h3 class="text-xl text-gray-900 mb-1">Annie Johansson</h3> <!-- Researcher Name-->
+                    <p class="text-sm text-[#527ED6] font-medium">PhD Candidate</p> <!-- Title -->
+                    <p class="text-sm text-gray-600 font-medium mb-3">University of Amsterdam</p> <!-- University -->
+                    <p class="text-gray-700 text-base leading-relaxed">Sample Text.</p> <!-- About text -->
+
+                    <!-- Links to sites/socials -->
+                    <div class="mt-4 flex space-x-3">
+                        <!-- href="URL" -->
+                        <a href="https://ann1ejohansson.github.io"
+                            class="text-gray-500 hover:text-[#527ED6] transition-colors duration-200"
+                            aria-label="Website"> <!-- label type of link here (e.g. "Twitter")-->
+                            <!-- icon options: "twitter", "linkedin", "link" for linking other URL, "graduation-cap" for university URL-->
+                            <i data-lucide="link" class="h-5 w-5"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Member Card -->
+                <div
+                    class="member-card bg-gray-50 rounded-lg shadow-md p-6 flex flex-col items-center text-center transform transition-transform duration-300 hover:scale-[1.01] hover:shadow-xl">
+                    <img src="../images/members/ertekin.jpg" class="member-card-image rounded-full mb-4">
+                    <h3 class="text-xl text-gray-900 mb-1">Şeyma Nur Ertekin</h3> <!-- Researcher Name-->
+                    <p class="text-sm text-[#527ED6] font-medium">PhD Candidate</p> <!-- Title -->
+                    <p class="text-sm text-gray-600 font-medium mb-3">University of Amsterdam</p> <!-- University -->
+                    <p class="text-gray-700 text-base leading-relaxed">Sample Text.</p> <!-- About text -->
+
+                    <!-- Links to sites/socials -->
+                    <div class="mt-4 flex space-x-3">
+                        <!-- href="URL" -->
+                        <a href="https://symaertkn.github.io/"
+                            class="text-gray-500 hover:text-[#527ED6] transition-colors duration-200"
+                            aria-label="Website"> <!-- label type of link here (e.g. "Twitter")-->
+                            <!-- icon options: "twitter", "linkedin", "link" for linking other URL, "graduation-cap" for university URL-->
+                            <i data-lucide="link" class="h-5 w-5"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/%C5%9Feyma-nur-ertekin-428021141/"
+                            class="text-gray-500 hover:text-[#527ED6] transition-colors duration-200"
+                            aria-label="LinkedIn"> <!-- label type of link here (e.g. "Twitter")-->
+                            <!-- icon options: "twitter", "linkedin", "link" for linking other URL, "graduation-cap" for university URL-->
                             <i data-lucide="linkedin" class="h-5 w-5"></i>
+                        </a>
+                        <a href="https://www.ampl-psych.com/"
+                            class="text-gray-500 hover:text-[#527ED6] transition-colors duration-200"
+                            aria-label="Website"> <!-- label type of link here (e.g. "Twitter")-->
+                            <!-- icon options: "twitter", "linkedin", "link" for linking other URL, "graduation-cap" for university URL-->
+                            <i data-lucide="link" class="h-5 w-5"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Member Card -->
+                <div
+                    class="member-card bg-gray-50 rounded-lg shadow-md p-6 flex flex-col items-center text-center transform transition-transform duration-300 hover:scale-[1.01] hover:shadow-xl">
+                    <img src="../images/members/placeholder.png" class="member-card-image rounded-full mb-4">
+                    <h3 class="text-xl text-gray-900 mb-1">Pritam Laskar</h3> <!-- Researcher Name-->
+                    <p class="text-sm text-[#527ED6] font-medium">PhD Candidate</p> <!-- Title -->
+                    <p class="text-sm text-gray-600 font-medium mb-3">University of Amsterdam</p> <!-- University -->
+                    <p class="text-gray-700 text-base leading-relaxed">Sample Text.</p> <!-- About text -->
+
+                    <!-- Links to sites/socials -->
+                    <div class="mt-4 flex space-x-3">
+                        <!-- href="URL" -->
+                        <a href="" class="text-gray-500 hover:text-[#527ED6] transition-colors duration-200"
+                            aria-label="Website"> <!-- label type of link here (e.g. "Twitter")-->
+                            <!-- icon options: "twitter", "linkedin", "link" for linking other URL, "graduation-cap" for university URL-->
+                            <i data-lucide="link" class="h-5 w-5"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Member Card -->
+                <div
+                    class="member-card bg-gray-50 rounded-lg shadow-md p-6 flex flex-col items-center text-center transform transition-transform duration-300 hover:scale-[1.01] hover:shadow-xl">
+                    <img src="../images/members/ye.jpg" class="member-card-image rounded-full mb-4">
+                    <h3 class="text-xl text-gray-900 mb-1">Lilian Ye</h3> <!-- Researcher Name-->
+                    <p class="text-sm text-[#527ED6] font-medium">Data Scientist</p> <!-- Title -->
+                    <p class="text-sm text-gray-600 font-medium mb-3">Prowise Learn</p> <!-- University -->
+                    <p class="text-gray-700 text-base leading-relaxed">Sample Text.</p> <!-- About text -->
+
+                    <!-- Links to sites/socials -->
+                    <div class="mt-4 flex space-x-3">
+                        <!-- href="URL" -->
+                        <a href="https://www.linkedin.com/in/lilian-ye/"
+                            class="text-gray-500 hover:text-[#527ED6] transition-colors duration-200"
+                            aria-label="LinkedIn"> <!-- label type of link here (e.g. "Twitter")-->
+                            <!-- icon options: "twitter", "linkedin", "link" for linking other URL, "graduation-cap" for university URL-->
+                            <i data-lucide="linkedin" class="h-5 w-5"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Member Card -->
+                <div
+                    class="member-card bg-gray-50 rounded-lg shadow-md p-6 flex flex-col items-center text-center transform transition-transform duration-300 hover:scale-[1.01] hover:shadow-xl">
+                    <img src="../images/members/kolesnikova.jpg" class="member-card-image rounded-full mb-4">
+                    <h3 class="text-xl text-gray-900 mb-1">Diana Kolesnikova</h3> <!-- Researcher Name-->
+                    <p class="text-sm text-[#527ED6] font-medium">PhD Candidate</p> <!-- Title -->
+                    <p class="text-sm text-gray-600 font-medium mb-3">Tilburg University</p> <!-- University -->
+                    <p class="text-gray-700 text-base leading-relaxed">Sample Text.</p> <!-- About text -->
+
+                    <!-- Links to sites/socials -->
+                    <div class="mt-4 flex space-x-3">
+                        <!-- href="URL" -->
+                        <a href="https://www.linkedin.com/in/dianakolesnikova/"
+                            class="text-gray-500 hover:text-[#527ED6] transition-colors duration-200"
+                            aria-label="LinkedIn"> <!-- label type of link here (e.g. "Twitter")-->
+                            <!-- icon options: "twitter", "linkedin", "link" for linking other URL, "graduation-cap" for university URL-->
+                            <i data-lucide="linkedin" class="h-5 w-5"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Member Card -->
+                <div
+                    class="member-card bg-gray-50 rounded-lg shadow-md p-6 flex flex-col items-center text-center transform transition-transform duration-300 hover:scale-[1.01] hover:shadow-xl">
+                    <img src="../images/members/gergely.jpg" class="member-card-image rounded-full mb-4">
+                    <h3 class="text-xl text-gray-900 mb-1">Gergely Bence</h3> <!-- Researcher Name-->
+                    <p class="text-sm text-[#527ED6] font-medium">PhD Candidate</p> <!-- Title -->
+                    <p class="text-sm text-gray-600 font-medium mb-3">Tilburg University</p> <!-- University -->
+                    <p class="text-gray-700 text-base leading-relaxed">Sample Text.</p> <!-- About text -->
+
+                    <!-- Links to sites/socials -->
+                    <div class="mt-4 flex space-x-3">
+                        <!-- href="URL" -->
+                        <a href="https://www.linkedin.com/in/bence-gergely-9628b7175/"
+                            class="text-gray-500 hover:text-[#527ED6] transition-colors duration-200"
+                            aria-label="LinkedIn"> <!-- label type of link here (e.g. "Twitter")-->
+                            <!-- icon options: "twitter", "linkedin", "link" for linking other URL, "graduation-cap" for university URL-->
+                            <i data-lucide="linkedin" class="h-5 w-5"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/bence-gergely-9628b7175/" target="_blank" rel="noopener"
+                            aria-label="Academia"
+                            class="text-gray-500 hover:text-[#527ED6] transition-colors duration-200">
+                            <i class="ai ai-google-scholar ai-2x"></i>
                         </a>
                     </div>
                 </div>
@@ -162,10 +319,10 @@
         </div>
     </section>
 
-  <!-- ========================
+    <!-- ========================
        Footer
   ========================= -->
-  <footer-component></footer-component>
+    <footer-component></footer-component>
 
 </body>
 
