@@ -160,7 +160,7 @@ document.addEventListener("DOMContentLoaded", function () {
       publicationsListDiv.innerHTML = "";
       sortedYears.forEach((year) => {
         const yearHeading = document.createElement("h3");
-        yearHeading.className = "text-xl font-bold text-indigo-800 mt-8 mb-6"; // format heading for year here
+        yearHeading.className = "text-xl font-bold text-[#527ED6] mt-8 mb-6"; // format heading for year here
         yearHeading.textContent = year;
         publicationsListDiv.appendChild(yearHeading);
 
