@@ -9,83 +9,104 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="stylesheet" href="../style.css">
-    
+
     <script src="https://unpkg.com/bibtex-js-parser/umd/bibtex-js-parser.js"></script>
 
     <!-- Loads in all available components e.g. header-component -->
     <script type="module" src="../components/index.js"></script>
-    
+
     <!-- Loads in all custom bibTextFunctions and executes when DOM loads to build all HTML dynamically based on file -->
     <script src="../scripts/bibTextFunctions.js"></script>
 
     <style>
         /* Custom styles for publications */
-        .publication-item {
+        /* Group container with separator */
+        .pubs-year-group {
+            margin-bottom: 0.5rem;
+            padding-bottom: 0.5rem;
             border-bottom: 1px solid #e2e8f0;
-            padding-bottom: 1.2rem;
-            margin-bottom: 1.2rem;
+        }
+
+        /* Group container with separator */
+        .pubs-year-group-container {
             display: flex;
-            align-items: flex-start;
-            gap: 1.2rem;
-            /* Equivalent to space-x-6 */
+            margin-bottom: 0.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #e2e8f0;
+            gap: 2rem; /* Space between year and publications list */
+        }
+
+        /* Individual publication item */
+        .publication-item {
+            margin-bottom: 0.5rem;
+            padding-bottom: 0.5rem;
         }
 
         .publication-item:last-child {
             border-bottom: none;
-            /* No border for the last item */
         }
 
-        .publication-year {
-            font-size: 1.2rem;
-            /* text-2xl */
+        .publication-year-group-label {
+            font-size: medium;
+            font-family: 'Space Grotesk', sans-serif;
             font-weight: 700;
-            /* font-bold */
-            color: #527ED6 !important;
-            width: 80px;
-            /* Fixed width for year column */
+            color: #527ED6;
+            width: 100px;
             flex-shrink: 0;
             text-align: right;
-            padding-top: 0.25rem;
-            /* Align year with title baseline */
+            padding-right: 1rem;
+            line-height: 1;
         }
 
+        /* Wrapper for publication items to take remaining space */
+        .publication-items-wrapper {
+            flex: 1;
+            /* Allows this wrapper to grow and take up the remaining space */
+        }
+
+
         .publication-details {
-            flex-grow: 1;
+            flex: 1;
+        }
+
+        .publication-title-link {
+            font-weight: 600;
+            color: #1A202C;
+            line-height: 1.4;
+            font-size: small;
+            text-decoration: none;
+            display: block;
+            cursor: pointer;
+        }
+
+        .publication-title-link:hover {
+            text-decoration: underline;
         }
 
         .publication-title {
             font-weight: 600;
-            /* font-semibold */
             color: #1A202C;
-            /* gray-900 */
-            margin-bottom: 0.5rem;
             line-height: 1.4;
-            font-size: 1rem;
-            /* text-lg for title */
+            font-size: small;
+            display: block;
         }
 
         .publication-authors {
-            font-style: italic;
             color: #4A5568;
-            /* gray-700 */
-            margin-bottom: 0.5rem;
-            font-size: 0.85rem;
+            font-size: small;
         }
 
-        .publication-journal,
-        .publication-booktitle {
+        .publication-venue {
             color: #4A5568;
-            /* gray-700 */
-            margin-bottom: 0.5rem;
-            font-size: 0.85rem;
+            font-size: small;
         }
 
         .publication-links a {
             color: #527ED6;
             text-decoration: none;
-            margin-right: 1rem;
             font-weight: 500;
-            font-size: 0.85rem;
+            font-size: small;
+            margin-top: 0rem;
         }
 
         .publication-links a:hover {
@@ -97,10 +118,8 @@
             text-decoration: none;
             font-weight: 500;
             cursor: pointer;
-            font-size: 0.85rem;
-            margin-top: 0.5rem;
-            display: inline-block;
-            /* Allows margin-top */
+            font-size: small;
+            margin-top: 0.2rem;
         }
 
         .publication-abstract-toggle:hover {
@@ -112,17 +131,15 @@
             padding-left: 1rem;
             border-left: 3px solid #527ED6;
             color: #4A5568;
-            font-size: 0.8rem;
+            font-size: small;
             line-height: 1.6;
             max-height: 0;
-            /* Hidden by default */
             overflow: hidden;
             transition: max-height 0.3s ease-out;
         }
 
         .publication-abstract-content.open {
             max-height: 200px;
-            /* Adjust as needed to show full abstract */
             transition: max-height 0.5s ease-in;
         }
     </style>
