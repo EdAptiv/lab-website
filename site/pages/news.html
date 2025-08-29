@@ -18,29 +18,78 @@
 
     <header-component></header-component>
 
-    <section id="contact" class="py-16 px-4 bg-gray-100">
-        <div class="container mx-auto max-w-6xl">
-            <h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">News & Socials</h2>
-            <div class="space-y-16">
+    <section id="news" class="py-14 px-4 bg-white">
+        <div class="max-w-5xl mx-auto justify-items-center">
+            <h2 class="text-4xl text-gray-900 mb-12 text-center">Lab News</h2>
 
-                <div class="bg-white rounded-lg shadow-md p-8 flex flex-col md:flex-row items-center md:items-start text-center md:text-left transform transition-transform duration-300 hover:scale-[1.01] hover:shadow-xl">
-                    <div class="p-4 bg-indigo-100 rounded-full mb-4 md:mb-0 md:mr-6 flex-shrink-0">
-                        <i data-lucide="construction" class="h-10 w-10 text-indigo-600"></i>
-                    </div>
-                    <div class="flex-grow flex flex-col md:flex-row items-start w-full">
-                        <div class="flex-grow md:w-2/3 md:pr-6">
-                            <h3 class="text-xl text-gray-900 mb-3">Page is under construction!</h3>
-                            <p class="text-base text-gray-600 leading-relaxed">
-                                Please check back later! <br><br>
-                            </p>
-                        </div>
+            <!-- News Item -->
+            <div class="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-10 mx-auto py-10 border-t border-gray-300">
+                <!-- Text -->
+                <div>
+                    <p class="text-base text-gray-900 mb-2">July 20–25, 2025</p>
+                    <div class="p-4 max-w-4xl">
+                        <p class="text-sm text-gray-700 leading-relaxed">
+                            We presented two papers at Educational Data Mining and Learning @ Scale in Palermo, Italy.
+                            Read the newly published papers:
+                            <br>
+                            <a href="https://doi.org/10.1145/3698205.3729553"
+                                class="text-sm text-[#527ED6] hover:text-[#005493]">
+                                Assessing Reliability in AI-Powered Learning Systems with A/A Tests.
+                            </a><br>
+                            <a href="https://educationaldatamining.org/edm2025/proceedings/2025.EDM.long-papers.99/2025.EDM.long-papers.99.pdf"
+                                class="text-sm text-[#527ED6] hover:text-[#005493]">
+                                Evaluating multidimensional extensions of the Elo rating systems for tracking ability in
+                                online learning environments.
+                            </a>
+                        </p>
                     </div>
                 </div>
 
-                
+                <!-- Image -->
+                <div>
+                    <img src="../images/news/news_placeholder.png" class="rounded-md max-w-md max-h-64 object-cover">
+                </div>
             </div>
-        </div>
+
+            <!-- News Item -->
+            <div class="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-10 mx-auto py-10 border-t border-gray-300">
+                <div>
+                    <p class="text-base text-gray-900 mb-2">July 7–11, 2025</p>
+                    <div class="p-4 max-w-4xl">
+                        <p class="text-sm text-gray-700 leading-relaxed">
+                            Lab writing retreat in Woerden!
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <img src="../images/news/july7.png" class="rounded-md max-w-2xl max-h-64 object-cover">
+                </div>
+            </div>
+
+            <!-- News Item -->
+            <div class="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-10 mx-auto py-10 border-t border-gray-300">
+                <div>
+                    <p class="text-base text-gray-900 mb-2">July 1, 2025</p>
+                    <div class="p-4 max-w-4xl">
+                        <p class="text-sm text-gray-700 leading-relaxed">
+                            We just published a paper in <em>Computers and Education: Artificial Intelligence</em>. <br>
+                            Read
+                            <a href="https://doi.org/10.1016/j.caeai.2025.100376"
+                                class="text-sm text-[#527ED6] hover:text-[#005493]">
+                                Psychometrics of an Elo-based large-scale online learning system
+                            </a>.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Image -->
+                <div>
+                    <img src="../images/news/july1.jpg" class="rounded-md max-w-2xl max-h-64 object-cover">
+                </div>
+            </div>
     </section>
+
+
 
     <footer-component></footer-component>
 

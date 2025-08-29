@@ -2,168 +2,181 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EdAptiv Lab</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EdAptiv Lab</title>
 
-  <!-- Base path for all relative links -->
-  <base href="lab-website" />
+    <!-- Base path for all relative links -->
+    <base href="lab-website" />
 
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Lucide icons -->
-  <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Lucide icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
 
-  <!-- Custom web components -->
-  <script type="module" src="./site/components/index.js"></script>
+    <!-- Custom web components -->
+    <script type="module" src="./site/components/index.js"></script>
 
-  <!-- Custom script -->
-  <script src="./site/scripts/script.js"></script>
+    <!-- Custom script -->
+    <script src="./site/scripts/script.js"></script>
 
-  <!-- Custom styles -->
-  <link rel="stylesheet" href="./site/style.css" />
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="./site/style.css" />
 </head>
 
 <body class="min-h-screen bg-gray-50 text-gray-800">
 
-  <!-- ========================
+    <!-- ========================
      Header Component
   ========================= -->
-  <header-component></header-component>
+    <header-component></header-component>
 
-  <!-- ========================
+    <!-- ========================
      About Section
   ========================= -->
-<section id="about" class="py-12 px-4 bg-white">
-<div class="container mx-auto max-w-4xl">
-    <!-- Heading & Team Image -->
-    <div class="md:flex md:items-center md:space-x-8 mb-6">
-        <!-- Lab Tagline -->
-        <h2 class="h2-intro-style text-3xl md:text-3xl mb-4 md:mb-0 text-right md:w-1/3">
-            <span class="text-gray-700 font-light not-italic">tomorrow’s <br>technology,</span><br>
-            <span class="text-[#527ED6] font-bold italic">today’s <br>education.</span>
-        </h2>
+    <section id="about" class="py-12 px-4 bg-white">
+        <div class="container mx-auto max-w-4xl">
+            <!-- Heading & Team Image -->
+            <div class="md:flex md:items-center md:space-x-8 mb-6">
+                <!-- Lab Tagline -->
+                <h2 class="h2-intro-style text-3xl md:text-3xl mb-4 md:mb-0 text-right md:w-1/3">
+                    <span class="text-gray-700 font-light not-italic">tomorrow’s <br> technology,</span><br>
+                    <span class="text-[#527ED6] font-semibold italic">today’s <br> education.</span>
+                </h2>
 
-        <!-- Image Link with Hover -->
-        <div class="relative h-56 md:h-72 w-full md:w-1/2 flex-shrink-0 group">
-            <a href="./site/pages/team.html" class="block w-full h-full relative">
-                <img src="./site/images/group_2-bw.jpeg" alt="<Meet the team>"
-                    class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-                    onerror="this.onerror=null; this.src='https://placehold.co/600x400/E0E7FF/4F46E5?text=Group+Photo+Not+Found'; console.error('Error loading images/group_photo.png');" />
-                <div
-                    class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <span class="text-white text-xl font-semibold">Meet the team</span>
+                <!-- Image Link with Hover -->
+                <div class="relative h-56 md:h-72 w-full md:w-1/2 flex-shrink-0 group">
+                    <a href="./site/pages/team.html" class="block w-full h-full relative">
+                        <img src="./site/images/group_2-bw.jpeg" alt="<Meet the team>"
+                            class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                            onerror="this.onerror=null; this.src='https://placehold.co/600x400/E0E7FF/4F46E5?text=Group+Photo+Not+Found'; console.error('Error loading images/group_photo.png');" />
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <span class="text-white text-xl font-semibold">Meet the team</span>
+                        </div>
+                    </a>
                 </div>
-            </a>
+            </div>
+
+            <!-- Description Text -->
+            <div class="md:max-w-5xl md:mx-auto">
+                <p class="text-base text-gray-700 leading-relaxed mb-3">
+                    The EdAptiv Lab unites a network of educational technology researchers to advance understanding of
+                    learning
+                    through data.
+                    Our work focuses on understanding the effectiveness of adaptive educational tools and leveraging
+                    their
+                    data to investigate the development of cognitive abilities, motivation, and learning behaviors.
+                    We draw on psychometrics, cognitive science, and motivation theory, using large-scale educational
+                    datasets and
+                    advanced statistical and computational methods. Our goal is to better understand how learners
+                    differ, how they
+                    change over time,
+                    and how data from real-world educational settings can inform theories of learning and development.
+                    A large part of our work also focuses on the development and evaluation of adaptive algorithms to
+                    track
+                    learners' ability,
+                    such as the Elo and Urnings algorithms.
+                </p>
+
+                <p class="text-base text-gray-700 leading-relaxed mb-3">
+                    We believe education should adapt to learners—not the other way around.
+                    Our research is supported by the Jacob's Foundation, NWO, and the European Union. Explore our
+                    publications
+                    <a href="./site/pages/publications.html" class="text-[#527ED6] hover:text-[#005493]">
+                        here.
+                    </a>
+                </p>
+
+                <p class="text-base text-gray-700 leading-relaxed mb-1">
+                    <strong class="font-semibold">Want to get in touch? </strong>
+                </p>
+
+                <p class="text-base text-gray-700 leading-relaxed">
+                    Send us an email to
+                    <a href="mailto:lab@edaptiv.org" class="text-[#527ED6] hover:text-[#005493]">
+                        lab@edaptiv.org
+                    </a>
+
+                    or read more about the EdAptiv Organization
+                    <a href="https://www.edaptiv.org" class="text-[#527ED6] hover:text-[#005493]">
+                        here.
+                    </a>
+                </p>
+            </div>
         </div>
-    </div>
-
-    <!-- Description Text -->
-    <div class="md:max-w-5xl md:mx-auto">
-      <p class="text-base text-gray-700 leading-relaxed mb-3">
-        Based in the
-        <a href="https://psyres.uva.nl/content/research-groups/programme-group-psychological-methods/programme-group-psychological-methods.html"
-          class="text-[#527ED6] hover:text-[#005493]">
-          Psychological Methods Department
-        </a>
-        at the
-        <a href="https://www.uva.nl/en" class="text-[#527ED6] hover:text-[#005493]">
-          University of Amsterdam
-        </a>,
-        The EdAptiv Lab unites a network of educational technology researchers to improve learning through data.
-        Drawing on psychometrics, cognitive science, and motivation theory, we design personalized, adaptive
-        learning
-        solutions.
-      </p>
-
-      <p class="text-base text-gray-700 leading-relaxed mb-3">
-        We believe education should adapt to learners—not the other way around.
-        Using AI and big data, we explore how people learn best and develop tools that support meaningful,
-        individualized progress.
-      </p>
-
-      <p class="text-base text-gray-700 leading-relaxed mb-1">
-        <strong class="font-semibold">Want to get in touch? </strong>
-      </p>
-      <p class="text-base text-gray-700 leading-relaxed">
-        Send us an email to
-        <a href="mailto:edaptiv@gmail.com" class="text-[#527ED6] hover:text-[#005493]">
-          edaptiv-lab@gmail.com
-        </a>
-        or read more about the EdAptiv Organization
-        <a href="https://www.edaptiv.org" class="text-[#527ED6] hover:text-[#005493]">
-          here.
-        </a>
-      </p>
-    </div>
-  </div>
-</section>
+    </section>
 
 
-  <!-- ========================
+    <!-- ========================
      News Section
   ========================= -->
-  <section id="news" class="py-8 px-4 bg-white">
-    <div class="container mx-auto max-w-4xl">
-      <h2 class="text-lg text-gray-700 italic leading-relaxed mb-4">
-        Latest News
-      </h2>
+    <section id="news" class="py-8 px-4 bg-white">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-lg text-gray-700 italic leading-relaxed mb-4">
+                Latest News
+            </h2>
 
-      <!-- News Items -->
-      <div class="space-y-3">
-        <!-- Item 1 -->
-        <div class="bg-[#E8F0FB] rounded-md p-3">
-          <p class="text-base text-gray-700 leading-relaxed">
-            <strong class="font-semibold">July 20-25, 2025</strong> <br>
-            We presented two papers at Educational Data Mining and Learning @ Scale in Palermo, Italy! Read the newly
-            published papers:
-            <br>
-            <a href="https://doi.org/10.1145/3698205.3729553" class="text-sm text-[#527ED6] hover:text-[#005493]">
-              Assessing Reliability in AI-Powered Learning Systems with A/A Tests.
-            </a><br>
-            <a
-              href="https://educationaldatamining.org/edm2025/proceedings/2025.EDM.long-papers.99/2025.EDM.long-papers.99.pdf"
-              class="text-sm text-[#527ED6] hover:text-[#005493]">
-              Evaluating multidimensional extensions of the Elo rating systems for tracking ability in online learning
-              environments.
-            </a>
-          </p>
+            <!-- News Items -->
+            <div class="space-y-3">
+                <!-- Item 1 -->
+                <div class="bg-[#E8F0FB] rounded-md p-3">
+                    <p class="text-base text-gray-700 leading-relaxed">
+                        <strong class="font-semibold">July 20-25, 2025</strong> <br>
+                        We presented two papers at Educational Data Mining and Learning @ Scale in Palermo, Italy! Read
+                        the newly
+                        published papers:
+                        <br>
+                        <a href="https://doi.org/10.1145/3698205.3729553"
+                            class="text-sm text-[#527ED6] hover:text-[#005493]">
+                            Assessing Reliability in AI-Powered Learning Systems with A/A Tests.
+                        </a><br>
+                        <a href="https://educationaldatamining.org/edm2025/proceedings/2025.EDM.long-papers.99/2025.EDM.long-papers.99.pdf"
+                            class="text-sm text-[#527ED6] hover:text-[#005493]">
+                            Evaluating multidimensional extensions of the Elo rating systems for tracking ability in
+                            online learning
+                            environments.
+                        </a>
+                    </p>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="bg-[#E8F0FB] rounded-md p-3">
+                    <p class="text-base text-gray-700 leading-relaxed">
+                        <strong class="font-semibold">July 11, 2025</strong> <br>
+                        We just wrapped up a week of coworking, discussions, and hanging out at our annual lab retreat.
+                    </p>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="bg-[#E8F0FB] rounded-md p-3">
+                    <p class="text-base text-gray-700 leading-relaxed">
+                        <strong class="font-semibold">June 1, 2025</strong> <br>
+                        We just published a paper in <em>Computers and Education: Artificial Intelligence</em>. <br>
+                        Read
+                        <a href="https://doi.org/10.1016/j.caeai.2025.100376"
+                            class="text-sm text-[#527ED6] hover:text-[#005493]">
+                            Psychometrics of an Elo-based large-scale online learning system
+                        </a>.
+                    </p>
+                </div>
+            </div>
+
+            <!-- News Button -->
+            <div class="mt-4">
+                <a href="./site/pages/news.html" class="text-base text-gray-700 font-medium hover:underline">
+                    Read all →
+                </a>
+            </div>
         </div>
+    </section>
 
-        <!-- Item 2 -->
-        <div class="bg-[#E8F0FB] rounded-md p-3">
-          <p class="text-base text-gray-700 leading-relaxed">
-            <strong class="font-semibold">July 11, 2025</strong> <br>
-            We just wrapped up a week of coworking, discussions, and hanging out at our annual lab retreat.
-          </p>
-        </div>
-
-        <!-- Item 3 -->
-        <div class="bg-[#E8F0FB] rounded-md p-3">
-          <p class="text-base text-gray-700 leading-relaxed">
-            <strong class="font-semibold">June 1, 2025</strong> <br>
-            We just published a paper in <em>Computers and Education: Artificial Intelligence</em>. <br> Read
-            <a href="https://doi.org/10.1016/j.caeai.2025.100376" class="text-sm text-[#527ED6] hover:text-[#005493]">
-              Psychometrics of an Elo-based large-scale online learning system
-            </a>.
-          </p>
-        </div>
-      </div>
-
-      <!-- News Button -->
-      <div class="mt-4">
-        <a href="./site/pages/news.html" class="text-base text-gray-700 font-medium hover:underline">
-          Read all →
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========================
+    <!-- ========================
      Footer Component
   ========================= -->
-  <footer-component></footer-component>
+    <footer-component></footer-component>
 
 </body>
+
 </html>
