@@ -73,13 +73,13 @@ h3 {
     vertical-align: middle;
 }
 
-header.scrolled {
-    background-color: #0a1a3c; /* Very dark blue */
-    height: 60px; /* Smaller height */
-    transition: background-color 0.3s ease, height 0.3s ease;
+header {
+  transition: background-color 0.3s ease, height 0.3s ease, padding 0.3s ease;
 }
 
-header {
-    transition: background-color 0.3s ease, height 0.3s ease;
-    height: 80px; /* Original height */
+header.scrolled {
+  background-color: #0a1a3c !important; /* Dark blue */
+  height: 60px !important;
+  padding-top: 0.25rem !important;
+  padding-bottom: 0.25rem !important;
 }

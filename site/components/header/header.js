@@ -5,23 +5,25 @@ class HeaderComponent extends HTMLElement {
             .then(html => {
                 this.innerHTML = html;
 
-                // Initialize lucide icons
+                // Lucide icons
                 if (typeof lucide !== 'undefined') {
                     lucide.createIcons();
-                } else {
-                    console.error('Lucide library not loaded.');
                 }
 
-                // Scroll listener for header
-                const header = this.querySelector('header');
-                window.addEventListener('scroll', () => {
-                    if (window.scrollY > 50) { // adjust trigger point
-                        header.classList.add('scrolled');
+                // Wait until header is actually in the DOM
+                const header = this.querySelector("header");
+                if (!header) return;
+
+                // Scroll listener
+                window.addEventListener("scroll", () => {
+                    if (window.scrollY > 50) {
+                        header.classList.add("scrolled");
                     } else {
-                        header.classList.remove('scrolled');
+                        header.classList.remove("scrolled");
                     }
                 });
             });
     }
 }
+
 export default HeaderComponent;
